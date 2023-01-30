@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "a4aa22f2-5ecb-450d-999b-11a70ba32922",
+		"name": "Room Type Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveRoomType",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"terrible room\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roomTypes/newRoomType",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roomTypes",
+						"newRoomType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteRoomType",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/roomTypes/deletion/terrible%20room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roomTypes",
+						"deletion",
+						"terrible%20room"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRoomTypes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/roomTypes/allRoomTypes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roomTypes",
+						"allRoomTypes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

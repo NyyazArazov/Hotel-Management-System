@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "9c46eea4-6ac9-4a5d-98b7-b3323dfe7e01",
+		"name": "Staff Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveStaff",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"ahmet mehmet\",\r\n    \"hotelId\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/staff/newStaff",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"staff",
+						"newStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatingStaff",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"fullName\" : \"bahacan\",\r\n    \"hotelId\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/staff/updatingStaff",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"staff",
+						"updatingStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStaffById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/staff/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"staff",
+						"3"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStaffById",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/staff/deletion/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"staff",
+						"deletion",
+						"3"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStaffs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/staff/allStaffs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"staff",
+						"allStaffs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "d0f0054b-01c2-4172-82d6-4b51898d59ea",
+		"name": "OtherStaff Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveOtherStaff",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"type\" : \"temizlik iscisi\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/otherStaffs/newOtherStaff",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"otherStaffs",
+						"newOtherStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatingOtherStaff",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"type\" : \"kat gorevlisi\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/otherStaffs/updatingOtherStaff",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"otherStaffs",
+						"updatingOtherStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOtherStaffById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/otherStaffs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"otherStaffs",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOtherStaffById",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/otherStaffs/deletion/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"otherStaffs",
+						"deletion",
+						"3"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllOtherStaffs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/otherStaffs/allOtherStaffs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"otherStaffs",
+						"allOtherStaffs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

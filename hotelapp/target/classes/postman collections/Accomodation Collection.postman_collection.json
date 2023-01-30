@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "26f1a06a-ff8c-442c-9e93-29a2560d65e4",
+		"name": "Accomodation Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveAccommodation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\" : 2,\r\n    \"roomId\" : 1,\r\n    \"checkIn\" : \"14-02-2022\",\r\n    \"checkOut\" : \"24-02-2022\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/accommodations/newAccommodation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accommodations",
+						"newAccommodation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatingAccommodation",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"customerId\" : 1,\r\n    \"roomId\" : 2,\r\n    \"checkIn\" : \"14-02-2022\",\r\n    \"checkOut\" : \"24-02-2022\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/accommodations/updatingAccommodation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accommodations",
+						"updatingAccommodation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAccommodationlById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/accommodations/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accommodations",
+						"2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAccommodationById",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/accommodations/deletion/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accommodations",
+						"deletion",
+						"2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllAccommodations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/accommodations/allAccommodations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accommodations",
+						"allAccommodations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
